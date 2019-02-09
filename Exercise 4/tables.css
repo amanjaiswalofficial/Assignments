@@ -1,0 +1,17 @@
+table
+{
+	border: 1px solid blue;
+	width: 70%;
+
+}
+th
+{
+	border: 3px dotted green;
+	font-style:italic;
+}
+td
+{
+	border: 1px solid grey;
+	font-family: sans-serif;
+	color: blue;
+}

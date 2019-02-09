@@ -1,0 +1,16 @@
+a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	background-color: #222222;
+	padding-right: 9px;
+	padding-left: 8px;	
+}
+
+#Box
+{
+	width: 315px;
+	height: 215px;
+	background-color: #222222;
+}
