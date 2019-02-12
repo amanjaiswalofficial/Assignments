@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	//var list=[{name:'Aman',age:10,salary:10000,DOB:''},{name:'Ajay',age:11},{name:'Arjun',age:12}]
+	function Person(name,age,salary,DOB)
+	{
+		this.name=name;
+		this.age=age;
+		this.salary=salary;
+		year=DOB.split("-",3)
+		this.DOB=year
+	}
+	var emp=new Array(5);
+	emp[0]=new Person('Aman',23,10000,'23-12-1995');
+	emp[1]=new Person('Ajay',20,8000,'11-11-1998');
+	emp[2]=new Person('Arjun',26,11000,'09-08-1992');
+	emp[3]=new Person('Amrit',19,500,'17-03-1999');
+	emp[4]=new Person('Abhishek',18,900,'12-06-2000');
+	console.log("Employees having salary more than 5000")
+	for(i=0;i<emp.length;i++)
+	{
+		if(emp[i].salary>5000)
+		{
+			console.log(emp[i]);
+		}
+	}
+	/*console.log("Grouping people by age")
+	
+	emp[0]=new Person('Aman',20,10000,'23-12-1995');
+	emp[1]=new Person('Ajay',25,8000,'11-11-1998');
+	emp[2]=new Person('Arjun',20,11000,'09-08-1992');
+	emp[3]=new Person('Amrit',22,500,'17-03-1999');
+	emp[4]=new Person('Abhishek',22,900,'12-06-2000');
+	var grpagegroup=new Array();
+	for(var i=0;i<emp.length;i++)
+	{
+		grpage=emp[i].age;
+		for(var j=0;j<emp.length;j++)
+		{
+			console.log("People with age "+grpage)
+			if(!grpagegroup.includes(grpage))
+			{
+				if(grpage==emp[j].age)
+				{
+				console.log(emp[j])
+				}
+				grpagegroup.push(emp[j].age)
+				console.log(grpagegroup)
+
+			}
+			
+		}
+		
+	}*/
+	console.log("People with age>20 and salary<1000 then incrementing their salary 5 times")
+	emp[0]=new Person('Aman',20,10000,'23-12-1995');
+	emp[1]=new Person('Ajay',25,8000,'11-11-1998');
+	emp[2]=new Person('Arjun',20,11000,'09-08-1992');
+	emp[3]=new Person('Amrit',21,500,'17-03-1999');
+	emp[4]=new Person('Abhishek',22,900,'12-06-2000');
+	for(var j=0;j<emp.length;j++)
+	{
+	if((emp[j].age>20) && (emp[j].salary<1000))
+		{
+			console.log(emp[j])
+			emp[j].salary=emp[j].salary*5;
+		}	}
+	console.log(emp)
+	</script>
+</body>
+</html>
