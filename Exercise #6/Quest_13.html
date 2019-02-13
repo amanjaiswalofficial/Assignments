@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title></title>
+	<script type="text/javascript" src="/home/ttn/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{	
+			max=$('li:first').height()
+			$('li').each(function(e)
+			{
+				var heights=$(this).css('height');
+				var hgt=parseInt(heights)
+				if(hgt>max)
+				{
+					max=hgt
+				}
+				
+			})
+			console.log(max)
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li style="height: 100px">A</li>
+		<li style="height: 200px">B</li>
+		<li style="height: 50px">C</li>
+		<li style="height: 375px">D</li>
+	</ul>
+</body>
+</html>

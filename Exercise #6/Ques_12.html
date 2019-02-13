@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title></title>
+	<script type="text/javascript" src="/home/ttn/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		.load
+		{
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{	
+			$('div').click(function()
+			 {
+				console.log("User clicked")
+			})
+			$('li').on('click',function(e)
+			{
+				e.stopPropagation()
+				console.log("User clicked on li item")
+			})
+		});
+	</script>
+</head>
+<body>
+	<div>
+		Some text
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+</body>
+</html>
