@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="/home/ttn/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        $(".button2").click(function(){
+        $.ajax({url: "new.json", 
+        dataType : "json",
+        type : "DELETE",
+        success: function(result){
+            $('.removeMe').remove();
+        },
+        error: function(request,msg,error) {
+          console.log("Request Failed");
+          $('.removeMe').remove();
+        }
+       });
+      });
+    })		
+
+	</script>
+</head>
+<body>
+
+<p>Click on button to send delete request and also delete row</p>
+    <table>
+        <tr class="removeMe">
+            <td><button class="button2">X</button></td>
+        </tr>
+    </table>
+    <hr>
+
+</body>
+</html>

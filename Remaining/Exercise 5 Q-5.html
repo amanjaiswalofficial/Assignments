@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Grouping</title>
+	<script type="text/javascript">
+		var person=new Array(5);
+		function pdetail(name,age,salary)
+		{
+			this.name=name;
+			this.salary=salary;
+			this.age=age;
+		};
+		person[0]=new pdetail('Aman',19,10000)
+		person[1]=new pdetail('Ajay',19,20000)
+		person[2]=new pdetail('Amrit',25,12333)
+		person[3]=new pdetail('Arun',22,121212)
+		person[4]=new pdetail('Abhi',22,333333)
+
+		//console.log(person)
+		var agegp1=new Array();
+		var agegp2=new Array();
+		var agegp3=new Array();
+		for(var i=0;i<person.length;i++)
+		{
+			if(person[i].age>=15 && person[i].age<20)
+			{
+				agegp1.push(person[i].name)
+			}
+			else if(person[i].age>=20 && person[i].age<25)
+			{
+				agegp2.push(person[i].name)
+			}
+			else if(person[i].age>=25 && person[i].age<30)
+			{
+				agegp3.push(person[i].name)
+			}
+			
+		}
+		console.log("Age Group 1 (15-20)")
+		console.log(agegp1)
+		console.log("Age Group 2 (20-25)")
+		console.log(agegp2)
+		console.log("Age Group 3 (25-30)")
+		console.log(agegp3)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
