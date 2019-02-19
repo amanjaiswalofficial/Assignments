@@ -1,0 +1,41 @@
+1.Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+
+Note : Use 'continue' statement.
+
+2. Write a Python program which takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+
+Note:
+
+i = 0,1.., m-1
+
+j = 0,1, n-1.
+
+Hint: Use input(), list comprehension, loops, range()
+
+Test Data : Rows = 3, Columns = 4
+
+Expected Result : [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]]
+
+3. Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
+Hints:
+Use filter() to filter some elements in a list.
+Use lambda to define anonymous functions.
+
+4. Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+
+Hints:
+
+Use map() to generate a list.
+
+Use lambda to define anonymous functions.
+
+5. Write a python function using *args parameters to print name and age from list of students.
+
+Test data: [{“name”: “abhi”, “age”: 22}, {“name”: “vikas”, “age”: 21}]
+
+       Expected result:
+
+name abhi
+age 22
+name vikas
+age 
