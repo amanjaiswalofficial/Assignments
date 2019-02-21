@@ -133,32 +133,32 @@ hh=item('HH',340)
 
 
 #SAMPLE LISTBOX
-"""lists=ListBox()
-lists.add(a,b,c,d,d,d)"""
-"""x=lists.empty()
+lists=ListBox()
+lists.add(a,b,c,d,d,d)
+x=lists.empty()
 for values in x:
-    #print(values.name+":"+str(values.value))
-    print(values)
-#print(lists.count())"""
+    print(values.name+":"+str(values.value))
+    #print(values)
+#print(lists.count())
 
 #SAMPLE DICTBOX
-"""dicts=DictBox()
-dicts.add(e,f,g,h)"""
-"""x=dicts.empty()
+dicts=DictBox()
+dicts.add(e,f,g,h)
+x=dicts.empty()
 for values in x:
-    #print(values.name+":"+str(values.value))
-    print(values)
-#print(dicts.count())"""
+    print(values.name+":"+str(values.value))
+    #print(values)
+#print(dicts.count())
 
 
 #3 BOXES: 2 LISTBOXES OF 20 and 9 ITEM EACH
 #1 DICTBOX OF SIZE 5
-listA=ListBox()
+"""listA=ListBox()
 listA.add(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t)
 listB=ListBox()
 listB.add(u,v,w,x,y,z,aa,bb,cc)
 dictC=DictBox()
-dictC.add(dd,ee,ff,gg,hh)
+dictC.add(dd,ee,ff,gg,hh)"""
 
 #EVENLY DISTRIBUTES THE ITEMS FROM BOXES
-repack_boxes(listA,listB,dictC)
+#repack_boxes(listA,listB,dictC)

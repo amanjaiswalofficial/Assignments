@@ -1,0 +1,7 @@
+1.Write a generator function to create fibonacci series up to n number. Get input n from the user. 
+2.Create a decorator do_twice which provides any function capability to execute it twice.
+3.Create a sample.txt file with 10-15 lines of text. Find out the most common word in the file
+4.Have the program find prime numbers until the user chooses to stop asking for the next one. 
+5.Converts various units between one another. The user enters the type of unit being entered, the type of unit they want to convert to and then the value. The program will then make the conversion
+6.A tool that allows the user to enter a text string and then in a separate control enter a regex pattern. It will run the regular expression against the source text and return any matches or flag errors in the regular expression. 
+
