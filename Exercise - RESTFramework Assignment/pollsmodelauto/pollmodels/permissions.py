@@ -1,5 +1,5 @@
 from rest_framework import permissions
-
+from .models import Questions
 class IsOwnerOrReadOnly(permissions.BasePermission):
     """
     Custom permission to only allow owners of an object to edit it.
@@ -12,8 +12,6 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
 
 class DidOwnerCreateQuestion(permissions.BasePermission):
 
-    def __init__(self, request):
-        self.request = request
 
     def has_object_permission(self, request, view, obj):
         #print('inside create user permission')
