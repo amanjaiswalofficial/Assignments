@@ -26,7 +26,7 @@ class ChoiceViewSet(viewsets.ModelViewSet):
 
 
     def perform_create(self, serializer):
-        print(DidOwnerCreateQuestion(self.request).has_object_permission(self, Questions))
+        #print(DidOwnerCreateQuestion(self.request).has_object_permission(self, Questions))
         #res = Questions.objects.get(id = int(self.request.POST['question']))
         #print(type(res.owner_id))
         #print(self.request.user)
